@@ -147,14 +147,14 @@
 
                 <div class="bg-gray-800 p-6 rounded-xl shadow-md border border-sky-400">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                        <h4 class="text-xl font-semibold text-white">Web Development Intern</h4>
-                        <span class="text-sm text-sky-400 font-medium">2021 - 2022</span>
+                        <h4 class="text-xl font-semibold text-white">Technician II - Operations</h4>
+                        <span class="text-sm text-sky-400 font-medium">2018 - 2020</span>
                     </div>
-                    <p class="text-white font-medium">Startup Name, City, Country</p>
+                    <p class="text-white font-medium">Collins Aerospace, Tanauan City, Philippines</p>
                     <ul class="mt-3 space-y-2 text-white list-disc list-inside">
-                        <li>Assisted in developing and testing web applications</li>
-                        <li>Participated in code reviews and team meetings</li>
-                        <li>Gained experience with version control and agile methodologies</li>
+                        <li>Prepared panels for painting and galley builds</li>
+                        <li>Participated in manufacturing and quality control of aircraft galleys</li>
+                        <li>Assisted in the maintenance of aircraft galleys</li>
                     </ul>
                 </div>
             </div>
