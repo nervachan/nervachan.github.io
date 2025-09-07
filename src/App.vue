@@ -203,7 +203,7 @@
 
 <!-- FOOTER -->
 <footer class="py-8 bg-gray-800 text-white text-center">
-    <p>&copy; <span id="year"></span> Jane Doe. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> NervaChan. All rights reserved.</p>
 </footer>
 
 </div>
