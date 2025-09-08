@@ -169,35 +169,75 @@
         <!-- Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
-            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-white">E-commerce Platform</h3>
-                    <p class="text-white text-sm mb-4">A full-stack online store built with React & Node.js.</p>
-                    <a href="#" class="text-sky-400 font-medium hover:underline">View Project →</a>
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/projectgaia.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project: Gaia</h3>
+                    <p class="text-white text-sm mb-4">Developed as a capstone project, this platform—built with TailwindCSS and Firebase—served as the predecessor to Retasify. Originally envisioned as both an inventory management system and a rental marketplace for the Maharlika Livelihood Complex, it laid the foundation for a sustainable fashion-sharing community.</p>
+                    <a href="https://nervachan.github.io/project_gaia1" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-white">Task-Tracking App</h3>
-                    <p class="text-white text-sm mb-4">A productivity tool with real-time sync using Firebase.</p>
-                    <a href="#" class="text-sky-400 font-medium hover:underline">View Project →</a>
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/retasify.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Retasify</h3>
+                    <p class="text-white text-sm mb-4">Built with TailwindCSS and powered by Firebase, this platform lets Baguio City share fashion sustainably by renting wardrobes, joining upcycling drives, and giving clothing a second life.</p>
+                    <a href="https://retasify.online" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-48 object-cover">
-                <div class="p-6">
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/oldportfolio.png" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
                     <h3 class="text-xl font-semibold mb-2 text-white">Portfolio Website</h3>
-                    <p class="text-white text-sm mb-4">A clean, responsive showcase built with Tailwind CSS.</p>
-                    <a href="#" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                    <p class="text-white text-sm mb-4">An early portfolio project, designed as a static webpage to showcase my initial work and design approach.</p>
+                    <a href="https://duanegt.github.io" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
-        </div>
+
+             <!-- Project 4 -->
+             <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/crms.png" alt="Project 4" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Centralized Request Monitoring System</h3>
+                    <p class="text-white text-sm mb-4">An early portfolio project, designed as a static webpage to showcase my initial work and design approach. (Default Login Credentials: user01@uc-crms.com / enter)</p>
+                    <a href="https://nervachan.github.io/UC_CRMS" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/techdocu.png" alt="Project 5" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Technical Documentation Page</h3>
+                    <p class="text-white text-sm mb-4">A technical documentation page developed as a college assignment. Built with TailwindCSS and plain HTML, focusing on clean structure and readable design.</p>
+                    <a href="https://nervachan.github.io/techdoc" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/tributepage.png" alt="Project 6" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Tribute Page</h3>
+                    <p class="text-white text-sm mb-4">A heartfelt tribute page dedicated to my grandmother, crafted using HTML and CSS to create a clean and personal design.</p>
+                    <a href="https://nervachan.github.io/tributePage" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+           
+             <!-- Project 7-->
+             <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/gaiaredesign.png" alt="Project 7" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Project:Gaia Landing Page Redesign</h3>
+                    <p class="text-white text-sm mb-4">A redesign of Project Gaia’s landing page, featuring a clean white-and-red theme. Built with TailwindCSS, focusing on modern layout and visual clarity</p>
+                    <a href="https://nervachan.github.io/gaia-design/" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+        </div> 
     </div>
 </section>
 
