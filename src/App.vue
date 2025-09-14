@@ -203,7 +203,7 @@
                 <img src="./assets/crms.png" alt="Project 4" class="w-full h-48 object-cover">
                 <div class="p-6 flex flex-col justify-between flex-1">
                     <h3 class="text-xl font-semibold mb-2 text-white">Centralized Request Monitoring System</h3>
-                    <p class="text-white text-sm mb-4">An early portfolio project, designed as a static webpage to showcase my initial work and design approach. (Default Login Credentials: user01@uc-crms.com / enter)</p>
+                    <p class="text-white text-sm mb-4">A capstone project for a client aiming for their masters degree, designed as a static webpage to showcase a proof of concept. (Default Login Credentials: user01@uc-crms.com / enter)</p>
                     <a href="https://nervachan.github.io/UC_CRMS" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
