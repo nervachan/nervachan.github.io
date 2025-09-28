@@ -1,5 +1,5 @@
 <script setup>
-
+import services from './components/services.vue';
 </script>
 
 <template>
@@ -250,6 +250,8 @@
         </div> 
     </div>
 </section>
+
+<services />
 
 <!-- FOOTER -->
 <footer class="py-8 bg-gray-800 text-white text-center">
