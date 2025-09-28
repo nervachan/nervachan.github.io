@@ -228,13 +228,23 @@
                 </div>
             </div>
            
-             <!-- Project 7-->
+            <!-- Project 7-->
              <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
                 <img src="./assets/gaiaredesign.png" alt="Project 7" class="w-full h-48 object-cover">
                 <div class="p-6 flex flex-col justify-between flex-1">
                     <h3 class="text-xl font-semibold mb-2 text-white">Project:Gaia Landing Page Redesign</h3>
                     <p class="text-white text-sm mb-4">A redesign of Project Gaia’s landing page, featuring a clean white-and-red theme. Built with TailwindCSS, focusing on modern layout and visual clarity</p>
                     <a href="https://nervachan.github.io/gaia-design/" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 8-->
+             <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/forensiclens.png" alt="Project 8" class="w-full h-48 object-center object-contain">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Forensic Lens</h3>
+                    <p class="text-white text-sm mb-4">A mobile app for Android developed for forensics students, designed to teach the principles and fundamentals of crime scene photography. Focused on accessibility and educational value.</p>
+                    <a href="https://inv8solutions.github.io/ForensicLensApp/" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
         </div> 
