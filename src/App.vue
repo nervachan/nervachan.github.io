@@ -10,11 +10,18 @@ import services from './components/services.vue';
 <section id="hero" class="relative h-screen w-full flex flex-col items-center justify-center text-center bg-gray-800 text-white px-6 bg-cover bg-center bg-no-repeat">
     <h1 class="text-8xl font-bold mb-4 text-white">Hello World,</h1>
     <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white"> I'm Duane</h1>
-    <p class="text-xl md:text-2xl mb-8 text-white">Gamer, Developer, Designer</p>
+    <p class="text-xl md:text-2xl mb-8 text-white">Gamer, Software Developer, Designer</p>
+    
+    <a href="#about"
+       class="bg-white text-indigo-600 font-semibold px-8 py-3 mt-6 rounded-full shadow-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+        View About Me
+    </a>
+    
     <a href="#projects"
-       class="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+       class="bg-white text-indigo-600 font-semibold px-8 py-3 mt-6 rounded-full shadow-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
         View My Work
     </a>
+    
 </section>
 
 
