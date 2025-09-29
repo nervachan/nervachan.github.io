@@ -102,7 +102,7 @@
               I develop engaging 2d games and interactive experiences, from concept to prototype, blending creativity with technical execution.
             </p>
             <button
-            
+              @click="openModal('gamedev')"
               class="text-sky-400 font-medium hover:underline"
             >Learn More →</button>
           </div>
@@ -123,7 +123,7 @@
               I design and build modern, responsive websites for personal blogs, professional portfolios, and startup landing pages, tailored to highlight your brand or project.
             </p>
             <button
-              href="#"
+              @click="openModal('blogposts')"
               class="text-sky-400 font-medium hover:underline"
             >Learn More →</button>
           </div>
@@ -149,6 +149,14 @@
     <Consultancy :show="activeModal === 'consultancy'" @close="closeModal">
     
     </Consultancy>
+
+    <Gamedev :show="activeModal === 'gamedev'" @close="closeModal">
+    
+    </Gamedev>
+
+    <Blogposts :show="activeModal === 'blogposts'" @close="closeModal">
+  
+    </Blogposts>
 </template>
 
 
@@ -158,6 +166,8 @@ import CapstoneModal from './capstoneModal.vue'
 import startupMvp from './startupMvp.vue'
 import WebMockup from './webMockup.vue'
 import Consultancy from './consultancy.vue'
+import Gamedev from './gamedev.vue'
+import Blogposts from './blogposts.vue'
 
 const activeModal = ref(null)
 

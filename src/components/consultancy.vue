@@ -44,7 +44,7 @@
         <li><strong>Embedded Systems:</strong> Arduino, Raspberry Pi</li>
         <li><strong>Design Tools:</strong> Figma, Adobe Photoshop, Krita</li>
         <li><strong>Operating Systems:</strong> Linux</li>
-        <li><strong>Content Management Systems:</strong>Wordpress</li>
+        <li><strong>Content Management Systems:</strong> Wordpress</li>
         
       </ul>
 

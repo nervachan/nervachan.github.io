@@ -34,52 +34,226 @@ import services from './components/services.vue';
 </section>
 
 <!-- SKILLS SECTION -->
-<section id="skills" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-6 max-w-5xl">
-        <h2 class="text-4xl font-bold text-center mb-12 text-white">Skills</h2>
-        <div class="flex flex-wrap justify-center gap-6">
-            <!-- Skill badges -->
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-html5 text-orange-600 text-2xl"></i> HTML5
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-css3-alt text-orange-600 text-2xl"></i> CSS3
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-js text-orange-600 text-2xl"></i> JavaScript
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-vuejs text-orange-600 text-2xl"></i> Vue.js
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-node-js text-orange-600 text-2xl"></i> Node.js
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-figma text-orange-600 text-2xl"></i> Figma
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-git-alt text-orange-600 text-2xl"></i> Git
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-google text-orange-600 text-2xl"></i> Firebase
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-python text-orange-600 text-2xl"></i> Python
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-linux text-orange-600 text-2xl"></i> Linux
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-android text-orange-600 text-2xl"></i> Android Studio
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-wordpress text-orange-600 text-2xl"></i> Wordpress
-            </span>
-            <span class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full shadow-md text-white border border-sky-400">
-                <i class="fab fa-vaadin text-orange-600 text-2xl"></i> Vaadin
-            </span>
+<section id="skills" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-4xl font-bold text-center mb-12 text-white">Skills</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- Skill card -->
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-html5 text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">HTML5</span>
         </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 95%;"></div>
+        </div>
+      </div>
+      
+      <!-- Repeat for other skills -->
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-css3-alt text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">CSS3</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-js text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">JavaScript</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-wand-magic-sparkles text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">TailwindCSS</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-google text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Firebase</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-git-alt text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Git</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-vuejs text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Vue.js</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-node-js text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Node.js</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 40%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-figma text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Figma</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-python text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Python</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 45%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-linux text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Linux</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-android text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Android Studio</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-vaadin text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Vaadin</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fab fa-wordpress text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Wordpress</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 45%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-pen-nib text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Krita</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 79%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-laptop-code text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Lua</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 65%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-laptop-code text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">rAthena</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-microchip text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Arduino</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-microchip text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Raspberry Pi</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 40%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-brands fa-unity text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Unity</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 border border-sky-400 p-4 rounded-xl shadow-md">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-laptop-code text-orange-600 text-2xl"></i>
+          <span class="text-white font-semibold">Kotlin</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-orange-500 h-2 rounded-full" style="width: 55%;"></div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 <!-- RESUME SECTION -->
