@@ -58,7 +58,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">HTML5</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 95%;"></div>
+         
         </div>
       </div>
       
@@ -69,7 +69,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">CSS3</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+          
         </div>
       </div>
 
@@ -79,7 +79,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">JavaScript</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+          
         </div>
       </div>
 
@@ -89,7 +89,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">TailwindCSS</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+          
         </div>
       </div>
 
@@ -99,7 +99,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Firebase</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 70%;"></div>
+          
         </div>
       </div>
 
@@ -109,7 +109,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Git</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+          
         </div>
       </div>
 
@@ -119,7 +119,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Vue.js</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+          
         </div>
       </div>
 
@@ -129,7 +129,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Node.js</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 40%;"></div>
+          
         </div>
       </div>
 
@@ -139,7 +139,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Figma</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+          
         </div>
       </div>
 
@@ -149,7 +149,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Python</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 45%;"></div>
+          
         </div>
       </div>
 
@@ -159,7 +159,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Linux</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 90%;"></div>
+          
         </div>
       </div>
 
@@ -169,7 +169,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Android Studio</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 75%;"></div>
+          
         </div>
       </div>
 
@@ -179,7 +179,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Vaadin</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+          
         </div>
       </div>
 
@@ -189,7 +189,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Wordpress</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 45%;"></div>
+          
         </div>
       </div>
 
@@ -199,7 +199,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Krita</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 79%;"></div>
+          
         </div>
       </div>
 
@@ -209,7 +209,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Lua</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 65%;"></div>
+          
         </div>
       </div>
 
@@ -219,7 +219,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">rAthena</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 80%;"></div>
+          
         </div>
       </div>
 
@@ -229,7 +229,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Arduino</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 60%;"></div>
+          
         </div>
       </div>
 
@@ -239,7 +239,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Raspberry Pi</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 40%;"></div>
+          
         </div>
       </div>
 
@@ -249,7 +249,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Unity</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 35%;"></div>
+          
         </div>
       </div>
 
@@ -259,7 +259,7 @@ import services from './components/services.vue';
           <span class="text-white font-semibold">Kotlin</span>
         </div>
         <div class="w-full bg-gray-700 rounded-full h-2">
-          <div class="bg-orange-500 h-2 rounded-full" style="width: 55%;"></div>
+          
         </div>
       </div>
 
