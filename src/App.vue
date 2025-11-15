@@ -7,7 +7,7 @@ import services from './components/services.vue';
     <div class="bg-gray-800 text-white">
 
 <!-- HERO SECTION -->
-<section id="hero" class="relative h-screen w-full flex flex-col items-center justify-center text-center bg-gray-800 text-white px-6 bg-cover bg-center bg-no-repeat">
+<section id="hero" class="relative h-screen w-full flex flex-col items-center justify-center text-center text-white px-6 bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/bg-hero.png');">
     <h1 class="text-8xl font-bold mb-4 text-white">Hello World,</h1>
     <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white"> I'm Duane</h1>
     <p class="text-xl md:text-2xl mb-8 text-white">Gamer, Software Developer, Designer</p>
@@ -308,7 +308,7 @@ import services from './components/services.vue';
                 <div class="bg-gray-800 p-6 rounded-xl shadow-md border border-sky-400">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                         <h4 class="text-xl font-semibold text-white">Lead Developer</h4>
-                        <span class="text-sm text-sky-400 font-medium">May 2025 - Present</span>
+                        <span class="text-sm text-sky-400 font-medium">May - September 2025</span>
                     </div>
                     <p class="text-white font-medium">Retasify, Baguio City, Philippines</p>
                     <ul class="mt-3 space-y-2 text-white list-disc list-inside">
@@ -430,6 +430,16 @@ import services from './components/services.vue';
                     <h3 class="text-xl font-semibold mb-2 text-white">Forensic Lens</h3>
                     <p class="text-white text-sm mb-4">A mobile app for Android developed for forensics students, designed to teach the principles and fundamentals of crime scene photography. Focused on accessibility and educational value.</p>
                     <a href="https://inv8solutions.github.io/ForensicLensApp/" class="text-sky-400 font-medium hover:underline">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 9-->
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img src="./assets/cellshop.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">BJMP-CAR Shop</h3>
+                    <p class="text-white text-sm mb-4">A capstone project created in partnership with BJMP, this website serves as an online marketplace for showcasing and selling the handcrafted products of Persons Deprived of Liberty (PDLs). It supports their livelihood and rehabilitation by giving their crafts a wider reach.</p>
+                    <a href="https://cellshopbcj.shop" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
         </div> 
