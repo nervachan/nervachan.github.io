@@ -1,5 +1,66 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import services from './components/services.vue';
+
+// Import scanner images
+import scanner1 from './assets/scanner_1.jpg';
+import scanner2 from './assets/scanner_2.jpg';
+import scanner3 from './assets/scanner_3.jpg';
+import scanner4 from './assets/scanner_4.jpg';
+import scanner5 from './assets/scanner_5.jpg';
+import scanner6 from './assets/scanner_6.jpg';
+
+const showModal = ref(false);
+const currentImageIndex = ref(0);
+const scannerImages = [
+  scanner1,
+  scanner2,
+  scanner3,
+  scanner4,
+  scanner5,
+  scanner6
+];
+
+const openModal = (index = 0) => {
+  currentImageIndex.value = index;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
+
+const nextImage = () => {
+  currentImageIndex.value = (currentImageIndex.value + 1) % scannerImages.length;
+};
+
+const prevImage = () => {
+  currentImageIndex.value = currentImageIndex.value === 0 ? scannerImages.length - 1 : currentImageIndex.value - 1;
+};
+
+const handleKeydown = (event) => {
+  if (!showModal.value) return;
+  
+  switch (event.key) {
+    case 'Escape':
+      closeModal();
+      break;
+    case 'ArrowLeft':
+      prevImage();
+      break;
+    case 'ArrowRight':
+      nextImage();
+      break;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleKeydown);
+});
 </script>
 
 <template>
@@ -442,9 +503,67 @@ import services from './components/services.vue';
                     <a href="https://cellshopbcj.shop" class="text-sky-400 font-medium hover:underline">View Project →</a>
                 </div>
             </div>
-        </div> 
+
+            <!-- Project 10-->
+            <div class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                <img :src="scanner1" alt="Scanner Project" class="w-full h-48 object-cover cursor-pointer" @click="openModal(0)">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <h3 class="text-xl font-semibold mb-2 text-white">MMWave Bag Scanner System</h3>
+                    <p class="text-white text-sm mb-4">A compact prototype using an LD2410C mmWave sensor and an ESP32 to detect objects inside bags as a low-cost, portable alternative to traditional bag scanners. This project demonstrates the potential of compact radar-based scanning as a safer, portable, and more affordable option for security checkpoints.</p>
+                    <button @click="openModal(0)" class="text-sky-400 font-medium hover:underline">View All Designs →</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<!-- Scanner Modal -->
+<div v-if="showModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" @click="closeModal">
+    <div class="relative max-w-4xl w-full mx-4" @click.stop>
+        <!-- Close button -->
+        <button @click="closeModal" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 z-10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        
+        <!-- Image container -->
+        <div class="relative bg-gray-900 rounded-lg overflow-hidden">
+            <img :src="scannerImages[currentImageIndex]" :alt="`Scanner ${currentImageIndex + 1}`" class="w-full h-auto max-h-[80vh] object-contain">
+            
+            <!-- Navigation buttons -->
+            <button @click="prevImage" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            
+            <button @click="nextImage" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Image indicators -->
+        <div class="flex justify-center mt-4 space-x-2">
+            <button 
+                v-for="(image, index) in scannerImages" 
+                :key="index"
+                @click="currentImageIndex = index"
+                :class="[
+                    'w-3 h-3 rounded-full transition-colors',
+                    currentImageIndex === index ? 'bg-sky-400' : 'bg-gray-600 hover:bg-gray-500'
+                ]"
+            ></button>
+        </div>
+        
+        <!-- Image counter -->
+        <div class="text-center mt-2 text-white">
+            {{ currentImageIndex + 1 }} / {{ scannerImages.length }}
+        </div>
+    </div>
+</div>
 
 <services />
 
