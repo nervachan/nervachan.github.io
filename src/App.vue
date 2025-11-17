@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import services from './components/services.vue';
+import certificates from './components/certificates.vue';
 
 // Import scanner images
 import scanner1 from './assets/scanner_1.jpg';
@@ -408,6 +409,8 @@ onUnmounted(() => {
     </div>
 </section>
 
+<certificates />
+
 <!-- PROJECTS/WORKS SECTION -->
 <section id="projects" class="py-20 bg-gray-800">
     <div class="container mx-auto px-6 max-w-5xl">
@@ -564,6 +567,7 @@ onUnmounted(() => {
         </div>
     </div>
 </div>
+
 
 <services />
 
