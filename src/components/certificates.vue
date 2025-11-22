@@ -88,7 +88,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 // Import certificate images
 import gdgimage1 from '../assets/gdgimage1.png';
 import gdgimage from '../assets/gdgimage.png';
-
+import impactweekcert from '../assets/impactweekcert.png';
 const showModal = ref(false);
 const currentImageIndex = ref(0);
 
@@ -106,6 +106,13 @@ const certificates = [
     image: gdgimage,
     name: 'Google Developers Group Volunteer Staff Member',
     description: 'Awarded for serving as a volunteer staff member at GDG DevFest Baguio 2025, contributing to event operations, assisting participants and speakers, and helping ensure a smooth and successful community-driven developer conference.',
+    dateIssued: '2025'
+  },
+  {
+    id: 2,
+    image: impactweekcert,
+    name: 'Impact Week 2025',
+    description: 'Awarded for serving as a volunteer staff member at Impact Week 2025, contributing to event operations, assisting participants and speakers, and helping ensure a smooth and successful conference.',
     dateIssued: '2025'
   }
 ];
