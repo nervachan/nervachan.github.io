@@ -1,173 +1,102 @@
 <template>
-  <section class="py-16 bg-gray-900" id="services">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-white text-center mb-12">
-        Services that I Offer
-      </h2>
+  <section id="services" class="scroll-mt-24 border-t border-blue-500/10 bg-panel/30 py-20 sm:py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <SectionHeading v-reveal tag="services" title="Services that I Offer" />
 
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Service 1 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
-          <img src="../assets/service1.png" alt="Service 1" class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Capstone Project Systems</h3>
-            <p class="text-white text-sm mb-4">
-              I design and develop complete systems tailored for academic capstone projects, ensuring robust functionality, proper documentation, and presentation-ready quality.
-            </p>
-            <button
-              class="text-sky-400 font-medium hover:underline"
-              @click="openModal('capstone')"
-            >Learn More →</button>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col"
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article
+          v-for="(service, index) in servicesList"
+          :key="service.key"
+          v-reveal="{ type: 'up', delay: (index % 3) * 100 }"
+          class="group flex flex-col overflow-hidden rounded-lg border border-blue-500/20 bg-panel/60 transition duration-300 hover:-translate-y-1 hover:border-blue-400/60 hover:shadow-glow"
         >
-          <img
-            src="../assets/service2.png"
-            alt="Service 2"
-            class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Startup MVP Development</h3>
-            <p class="text-white text-sm mb-4">
-              I build minimum viable products (MVPs) that help startups validate ideas quickly, focusing on core features, user experience, and scalable, cost-efficient prototypes.
-            </p>
-            <button
-              @click="openModal('startup')"
-              class="text-sky-400 font-medium hover:underline"
-            >Learn More →</button>
+          <div class="h-48 shrink-0 overflow-hidden border-b border-blue-500/10 bg-night/60">
+            <img
+              :src="service.image"
+              :alt="service.title"
+              class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
           </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col"
-        >
-          <img
-            src="../assets/service3.png"
-            alt="Service 3"
-            class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Website & App Mockups</h3>
-            <p class="text-white text-sm mb-4">
-              I create clean, user-friendly mockups and UI concepts for web and mobile apps, providing a solid visual foundation for development and user testing.
-            </p>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="mb-2 text-lg font-semibold text-white transition-colors group-hover:text-blue-300">
+              {{ service.title }}
+            </h3>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-slate-400">{{ service.description }}</p>
             <button
-                @click="openModal('webmockup')"
-              href="#"
-              class="text-sky-400 font-medium hover:underline"
-            >Learn More →</button>
+              @click="openModal(service.key)"
+              class="self-start font-mono text-sm text-blue-400 transition-colors hover:text-cyan-300"
+            >
+              Learn More →
+            </button>
           </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col"
-        >
-          <img
-            src="../assets/service4.png"
-            alt="Service 4"
-            class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Startup & Project Consultancy</h3>
-            <p class="text-white text-sm mb-4">
-              I offer guidance on system design, tech stack choices, and project direction to help students and founders align their goals with practical solutions.
-            </p>
-            <button
-             @click="openModal('consultancy')"
-              class="text-sky-400 font-medium hover:underline"
-            >Learn More →</button>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col"
-        >
-          <img
-            src="../assets/service5.png"
-            alt="Service 5"
-            class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Game Development</h3>
-            <p class="text-white text-sm mb-4">
-              I develop engaging 2d games and interactive experiences, from concept to prototype, blending creativity with technical execution.
-            </p>
-            <button
-              @click="openModal('gamedev')"
-              class="text-sky-400 font-medium hover:underline"
-            >Learn More →</button>
-          </div>
-        </div>
-
-         <!-- Service 6 -->
-        <div
-          class="bg-gray-800 border border-sky-400 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col"
-        >
-          <img
-            src="../assets/service6.png"
-            alt="Service 6"
-            class="w-full h-48 object-cover object-center"
-          />
-          <div class="p-6 flex flex-col justify-between flex-1">
-            <h3 class="text-xl font-semibold mb-2 text-white">Websites for Blogs, Portfolios & Landing Pages</h3>
-            <p class="text-white text-sm mb-4">
-              I design and build modern, responsive websites for personal blogs, professional portfolios, and startup landing pages, tailored to highlight your brand or project.
-            </p>
-            <button
-              @click="openModal('blogposts')"
-              class="text-sky-400 font-medium hover:underline"
-            >Learn More →</button>
-          </div>
-        </div>
+        </article>
       </div>
-     
     </div>
   </section>
 
-  <!-- Use the modal -->
-    <CapstoneModal :show="activeModal === 'capstone'" @close="closeModal">
-      
-    </CapstoneModal>
- 
-    <startupMvp :show="activeModal === 'startup'" @close="closeModal">
-      
-    </startupMvp>
-
-    <WebMockup :show="activeModal === 'webmockup'" @close="closeModal">
-        
-    </WebMockup>
-
-    <Consultancy :show="activeModal === 'consultancy'" @close="closeModal">
-    
-    </Consultancy>
-
-    <Gamedev :show="activeModal === 'gamedev'" @close="closeModal">
-    
-    </Gamedev>
-
-    <Blogposts :show="activeModal === 'blogposts'" @close="closeModal">
-  
-    </Blogposts>
+  <CapstoneModal :show="activeModal === 'capstone'" @close="closeModal" />
+  <startupMvp :show="activeModal === 'startup'" @close="closeModal" />
+  <WebMockup :show="activeModal === 'webmockup'" @close="closeModal" />
+  <Consultancy :show="activeModal === 'consultancy'" @close="closeModal" />
+  <Gamedev :show="activeModal === 'gamedev'" @close="closeModal" />
+  <Blogposts :show="activeModal === 'blogposts'" @close="closeModal" />
 </template>
-
 
 <script setup>
 import { ref } from 'vue'
+import SectionHeading from './sectionHeading.vue'
 import CapstoneModal from './capstoneModal.vue'
 import startupMvp from './startupMvp.vue'
 import WebMockup from './webMockup.vue'
 import Consultancy from './consultancy.vue'
 import Gamedev from './gamedev.vue'
 import Blogposts from './blogposts.vue'
+
+import service1 from '../assets/service1.png'
+import service2 from '../assets/service2.png'
+import service3 from '../assets/service3.png'
+import service4 from '../assets/service4.png'
+import service5 from '../assets/service5.png'
+import service6 from '../assets/service6.png'
+
+const servicesList = [
+  {
+    key: 'capstone',
+    image: service1,
+    title: 'Capstone Project Systems',
+    description: 'I design and develop complete systems tailored for academic capstone projects, ensuring robust functionality, proper documentation, and presentation-ready quality.',
+  },
+  {
+    key: 'startup',
+    image: service2,
+    title: 'Startup MVP Development',
+    description: 'I build minimum viable products (MVPs) that help startups validate ideas quickly, focusing on core features, user experience, and scalable, cost-efficient prototypes.',
+  },
+  {
+    key: 'webmockup',
+    image: service3,
+    title: 'Website & App Mockups',
+    description: 'I create clean, user-friendly mockups and UI concepts for web and mobile apps, providing a solid visual foundation for development and user testing.',
+  },
+  {
+    key: 'consultancy',
+    image: service4,
+    title: 'Startup & Project Consultancy',
+    description: 'I offer guidance on system design, tech stack choices, and project direction to help students and founders align their goals with practical solutions.',
+  },
+  {
+    key: 'gamedev',
+    image: service5,
+    title: 'Game Development',
+    description: 'I develop engaging 2D games and interactive experiences, from concept to prototype, blending creativity with technical execution.',
+  },
+  {
+    key: 'blogposts',
+    image: service6,
+    title: 'Websites for Blogs, Portfolios & Landing Pages',
+    description: 'I design and build modern, responsive websites for personal blogs, professional portfolios, and startup landing pages, tailored to highlight your brand or project.',
+  },
+]
 
 const activeModal = ref(null)
 
@@ -178,5 +107,4 @@ function openModal(name) {
 function closeModal() {
   activeModal.value = null
 }
-
 </script>

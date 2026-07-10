@@ -2,6 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-gray-800;
+@layer base {
+  /* No scroll-behavior: smooth here — Lenis owns smooth scrolling, and a
+     reduced-motion user (Lenis disabled) should get instant anchor jumps. */
+  body {
+    @apply bg-night font-sans text-slate-300 antialiased;
+  }
+
+  ::selection {
+    @apply bg-blue-500/40 text-white;
+  }
+}
+
+@layer utilities {
+  /* subtle circuit-grid backdrop */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(59, 130, 246, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.07) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+/* ---- Scroll-reveal transitions (see src/directives/reveal.js) ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-up { transform: translateY(48px); }
+  .reveal-down { transform: translateY(-48px); }
+  .reveal-left { transform: translateX(-56px); }
+  .reveal-right { transform: translateX(56px); }
+  .reveal-zoom { transform: scale(0.9); }
+  .reveal-blur { transform: translateY(24px); filter: blur(14px); }
+  .reveal.is-revealed {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* Lock scroll while the preloader overlay is up */
+html.is-loading,
+html.is-loading body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
 }

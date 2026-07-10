@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import 'lenis/dist/lenis.css'
 import './assets/main.css'
+import { reveal } from './directives/reveal'
 
-createApp(App).mount('#app')
+createApp(App).directive('reveal', reveal).mount('#app')
