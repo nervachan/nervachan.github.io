@@ -22,6 +22,8 @@ import scanner3 from './assets/scanner_3.jpg';
 import scanner4 from './assets/scanner_4.jpg';
 import scanner5 from './assets/scanner_5.jpg';
 import scanner6 from './assets/scanner_6.jpg';
+import servers from './assets/servers.jpg';
+import trapihaus from './assets/trapihaus.png';
 
 // ---------- Preloader ----------
 const loading = ref(true);
@@ -177,6 +179,17 @@ const education = [
 
 const experience = [
   {
+    title: 'Research & Innovation Technical Staff',
+    period: 'April 2026 — Present',
+    org: 'University of the Cordilleras, Baguio City, Philippines',
+    points: [
+      'Lead research on automation and emerging technologies to identify opportunities for institutional innovation.',
+      'Design and develop automation and AI solutions that serve the university and its diverse stakeholders.',
+      'Promote AI awareness and literacy across the university community through outreach, training, and knowledge-sharing.',
+      'Conduct and contribute to academic research in automation, AI, and emerging technology domains.',
+    ],
+  },
+  {
     title: 'Backend / Arduino Developer',
     period: 'Sep 2025 — Present',
     org: 'Inv8 Studios, Baguio City, Philippines',
@@ -220,6 +233,17 @@ const experience = [
 
 // ---------- Projects ----------
 const projects = [
+  {
+    title: 'Trapihaus',
+    image: trapihaus,
+    link: 'trapihaus.vercel.app',
+    description: 'Trapihaus is a hyperlocal digital marketplace designed to connect accommodation owners in Baguio City with students and tourists seeking safe, compliant, and affordable stays. Built primarily as an MVP (Minimum Viable Product), it addresses local housing and transient booking needs before scaling to the wider BLISST region (Benguet, La Trinidad, Itogon, Sablan, Tuba, and Tublay).',
+  },
+  {
+    title: 'Self-Hosted AI & Automation Server Environment',
+    image: servers,
+    description: 'Built an AI and automation server environment using Ollama and n8n, deployed across two separate repurposed machines for sandboxing, testing, and development purposes. This setup provided a dedicated, self-hosted space for experimenting with local LLMs and workflow automation without relying on external cloud services.',
+  },
   {
     title: 'Project: Gaia',
     image: projectGaia,

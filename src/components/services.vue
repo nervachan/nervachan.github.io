@@ -40,6 +40,7 @@
   <Consultancy :show="activeModal === 'consultancy'" @close="closeModal" />
   <Gamedev :show="activeModal === 'gamedev'" @close="closeModal" />
   <Blogposts :show="activeModal === 'blogposts'" @close="closeModal" />
+  <Automation :show="activeModal === 'automation'" @close="closeModal" />
 </template>
 
 <script setup>
@@ -51,6 +52,7 @@ import WebMockup from './webMockup.vue'
 import Consultancy from './consultancy.vue'
 import Gamedev from './gamedev.vue'
 import Blogposts from './blogposts.vue'
+import Automation from './automation.vue'
 
 import service1 from '../assets/service1.png'
 import service2 from '../assets/service2.png'
@@ -58,6 +60,7 @@ import service3 from '../assets/service3.png'
 import service4 from '../assets/service4.png'
 import service5 from '../assets/service5.png'
 import service6 from '../assets/service6.png'
+import service7 from '../assets/service7.jpg'
 
 const servicesList = [
   {
@@ -95,6 +98,12 @@ const servicesList = [
     image: service6,
     title: 'Websites for Blogs, Portfolios & Landing Pages',
     description: 'I design and build modern, responsive websites for personal blogs, professional portfolios, and startup landing pages, tailored to highlight your brand or project.',
+  },
+  {
+    key: 'automation',
+    image: service7,
+    title: 'Cloud-based & Self-Hosted AI & Automation Server Environment',
+    description: 'I build and maintain self-hosted AI and automation server environments, providing a dedicated space for experimenting with local LLMs and workflow automation without relying on external cloud services.',
   },
 ]
 
